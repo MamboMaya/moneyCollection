@@ -1,0 +1,21 @@
+<h1>Money!</h1>
+
+<nav>
+  <a href="/money/new">Add Some New Money</a>
+</nav>
+
+<h3>I currently have {{money.length}} different types of currency. I need more!</h3>
+
+
+<div class="money">
+  {{#money}}
+  <div class="mon">
+    <h4>From: {{country}}</h4>
+    <h5>Value: {{value}}</h5>
+    <h5>Year: {{year}}</h5>
+    <h5>Made of: {{materials}}</h5>
+    <a href="/money/{{_id}}/edit">Edit</a>
+    <a href="/money/{{_id}}/delete">Delete</a>
+  </div>
+  {{/money}}
+</div>

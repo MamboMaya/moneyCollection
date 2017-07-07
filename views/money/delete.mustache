@@ -1,0 +1,11 @@
+<h1>Delete my money.</h1>
+
+<form class="" action="/money/{{money._id}}/delete" method="post">
+  {{#money}}
+  Country: {{country}}<br>
+  Value: {{value}}<br>
+  Year: {{year}}<br>
+  Materials: {{materials}}<br>
+  {{/money}}
+  <input type="submit" name="" value="DELETE">
+</form>

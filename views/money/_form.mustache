@@ -1,0 +1,40 @@
+{{#validationErrors}}
+  <p>You can't add this to the collection. Make sure the infomation you entered is correct.</p>
+{{/validationErrors}}
+
+<div class="">
+  <label for="country">Country:</label>
+  <input type="text" name="country" value="{{money.country}}">
+  {{#validationErrors.errors.country}}
+    <p>Make sure you give me a country!</p>
+  {{/validationErrors.errors.country}}
+</div>
+
+<div class="">
+  <label for="value">Value:</label>
+  <input type="text" name="value" value="{{money.value}}">
+  {{#validationErrors.errors.value}}
+    <p>Make sure you give me a value!</p>
+  {{/validationErrors.errors.value}}
+</div>
+
+<div class="">
+  <label for="year">Year:</label>
+  <input type="year" name="year" value="{{money.year}}">
+  {{#validationErrors.errors.year}}
+    <p>Make sure you give me a year!</p>
+  {{/validationErrors.errors.year}}
+</div>
+
+<div class="">
+  <label for="materials">Materials:</label>
+  <small>Enter each material separated by a space. **Example: cotton linen copper ** </small>
+  <input type="text" name="materials" value="{{money.materials}}">
+  {{#validationErrors.errors.materials}}
+    <p>Make sure you give me the materials!</p>
+  {{/validationErrors.errors.materials}}
+</div>
+
+<div class="">
+  <input type="submit" name="" value="Add Currency to Collection">
+</div>
